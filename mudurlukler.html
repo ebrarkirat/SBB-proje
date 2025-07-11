@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Müdürlüklerimiz</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .logo {
+      height: 60px;
+    }
+    .mudurluk-kart {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .mudurluk-kart:hover {
+      transform: scale(1.02);
+    }
+    .mudur-kutu {
+      background-color: white;
+      border: 2px solid #0d6efd;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .mudur-kutu img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid #0d6efd;
+      object-fit: cover;
+    }
+  </style>
 </head>
-<body class="bg-light">
+<body>
 
-  <!-- ÜST MENÜ -->
-  <header class="bg-white shadow-sm border-bottom">
-    <div class="container d-flex align-items-center py-3">
-      <img src="img/sbb-logo.png" alt="SBB Logo" height="70" class="me-3">
-      <div>
-        <h1 class="h4 text-uppercase text-primary fw-bold mb-0">SAKARYA BÜYÜKŞEHİR BELEDİYESİ</h1>
-        <p class="mb-0 text-muted">Bilgi İşlem Daire Başkanlığı</p>
-      </div>
+  <!-- ÜST KISIM (LOGO VE BAŞLIK) -->
+  <header class="d-flex align-items-center p-3 bg-white shadow-sm">
+    <img src="img/sbb-logo.png" alt="Logo" class="logo me-3">
+    <div>
+      <h5 class="mb-0 fw-bold text-primary">SAKARYA BÜYÜKŞEHİR BELEDİYESİ</h5>
+      <small class="text-muted">Bilgi İşlem Daire Başkanlığı</small>
     </div>
   </header>
 
-  <!-- SAYFA BAŞLIĞI -->
-  <div class="container mt-4">
-    <h2 class="text-primary">Müdürlüklerimiz</h2>
-    <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+  <!-- ANA BAŞLIK -->
+  <div class="container my-5">
+    <h2 class="text-primary mb-4">Müdürlüklerimiz</h2>
 
-      <!-- 1. Kart -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Bilişim Sistemleri ve Donanım Şube Müdürlüğü</h5>
-            <p class="card-text">Bilgi işlem altyapısının donanım ve sistem bileşenlerini planlar, kurar ve sürdürülebilirliğini sağlar.</p>
-          </div>
+    <!-- KARTLAR -->
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="p-4 bg-white border rounded mudurluk-kart" 
+             data-mudur="Can Alper ÖZTÜRK" 
+             data-unvan="Şube Müdürü" 
+             data-img="img/mudur1.jpg">
+          <h5 class="text-primary">Yazılım Şube Müdürlüğü</h5>
+          <p>Belediye bünyesindeki yazılım projelerini geliştirir, yönetir ve destek sağlar.</p>
         </div>
       </div>
 
-      <!-- 2. Kart -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Coğrafi Bilgi Sistemleri Şube Müdürlüğü</h5>
-            <p class="card-text">Belediyeye ait coğrafi verilerin yönetimi, analizleri ve harita tabanlı hizmetlerin geliştirilmesini yürütür.</p>
-          </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-white border rounded mudurluk-kart"
+             data-mudur="Servet MEŞE"
+             data-unvan="Şube Müdürü"
+             data-img="img/mudur1.jpg">
+          <h5 class="text-primary">Bilişim Sistemleri ve Donanım Şube Müdürlüğü</h5>
+          <p>Bilgi işlem altyapısının donanım ve sistem bileşenlerini planlar, kurar ve sürdürülebilirliğini sağlar.</p>
         </div>
       </div>
 
-      <!-- 3. Kart -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Elektronik ve Haberleşme Sistemleri Şube Müdürlüğü</h5>
-            <p class="card-text">Kurumsal haberleşme sistemleri, kamera ve elektronik sistemlerin kurulum, bakım ve yönetimini sağlar.</p>
-          </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-white border rounded mudurluk-kart"
+             data-mudur="Murat PEHLİVAN"
+             data-unvan="Şube Müdürü"
+             data-img="img/mudur1.jpg">
+          <h5 class="text-primary">Elektronik ve Haberleşme Sistemleri Şube Müdürlüğü</h5>
+          <p>Kurum içi elektronik sistemlerin, güvenlik kameralarının ve haberleşme altyapısının yönetimini sağlar.</p>
         </div>
       </div>
 
-      <!-- 4. Kart -->
-      <div class="col">
-        <div class="card h-100">
-          <div class="card-body">
-            <h5 class="card-title text-primary">Yazılım Şube Müdürlüğü</h5>
-            <p class="card-text">Belediye bünyesindeki yazılım projelerini geliştirir, yönetir ve destek sağlar.</p>
-          </div>
+      <div class="col-md-6">
+        <div class="p-4 bg-white border rounded mudurluk-kart"
+             data-mudur="İlhan ÇAKMAK"
+             data-unvan="Şube Müdürü"
+             data-img="img/mudur1.jpg">
+          <h5 class="text-primary">Coğrafi Bilgi Sistemleri Şube Müdürlüğü</h5>
+          <p>Coğrafi verilerin yönetimi, analizi ve harita tabanlı hizmetlerin geliştirilmesini yürütür.</p>
         </div>
       </div>
+    </div>
 
+    <!-- MÜDÜR BİLGİSİ KUTUSU -->
+    <div id="mudur-kutu" class="mudur-kutu d-none mt-5">
+      <img id="mudur-resim" src="" alt="Müdür Fotoğrafı">
+      <div>
+        <h5 id="mudur-ad" class="text-primary fw-bold">Ad Soyad</h5>
+        <p id="mudur-unvan" class="text-success mb-0">Ünvan</p>
+      </div>
     </div>
   </div>
 
-  <!-- ALT BİLGİ -->
-  <footer class="bg-dark text-white text-center py-3 mt-5">
-    <small>&copy; 2025 Sakarya Büyükşehir Belediyesi</small>
-  </footer>
-
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>
