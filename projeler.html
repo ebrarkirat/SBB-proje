@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projelerimiz</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { background-color: #f8f9fa; }
+    .project-card img { height: 200px; object-fit: cover; }
+    .header-container { display: flex; align-items: center; padding: 20px; border-bottom: 2px solid #e5e5e5; }
+    .header-logo { height: 60px; margin-right: 15px; }
+    .header-title { font-size: 1.8rem; font-weight: bold; color: #007bff; }
+    .header-subtitle { font-size: 1rem; color: #555; }
+  </style>
+</head>
+<body>
+
+  <!-- Üst Logo ve Başlık -->
+  <div class="header-container">
+    <img src="img/sbb-logo.png" alt="Logo" class="header-logo" />
+    <div>
+      <div class="header-title">SAKARYA BÜYÜKŞEHİR BELEDİYESİ</div>
+      <div class="header-subtitle">Bilgi İşlem Daire Başkanlığı</div>
+    </div>
+  </div>
+
+  <!-- Sayfa Başlığı -->
+  <div class="container mt-4">
+    <h2 class="text-primary mb-4">Projelerimiz</h2>
+    <p class="mb-4">Belediyemiz tarafından Bilgi İşlem Dairesi tarafından geliştirilen projelerin listesi ve kısa tanıtımı aşağıda yer almaktadır.</p>
+
+    <div class="row g-4">
+      <!-- Proje 1 -->
+      <div class="col-md-6">
+        <div class="card project-card h-100">
+          <img src="img/yazilimpark.jpg" class="card-img-top" alt="Yazılım Park">
+          <div class="card-body">
+            <h5 class="card-title">Yazılım Park Atölyesi</h5>
+            <p class="card-text">Genç yazılımcıların yetiştirilmesi ve desteklenmesi için oluşturulan “Yazılım Park” projesidir.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proje 2 -->
+      <div class="col-md-6">
+        <div class="card project-card h-100">
+          <img src="img/sbbnet.jpg" class="card-img-top" alt="SBBNET Fiber">
+          <div class="card-body">
+            <h5 class="card-title">SBBNET Fiber Altyapı</h5>
+            <p class="card-text">5G uyumlu yüksek hızda internet altyapısı sağlayarak afet anlarında iletişim güvenliğini amaçlayan altyapı projesidir.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proje 3 -->
+      <div class="col-md-6">
+        <div class="card project-card h-100">
+          <img src="img/afet.jpg" class="card-img-top" alt="Afet Yönetimi">
+          <div class="card-body">
+            <h5 class="card-title">Afet Yönetim ve Koordinasyon Sistemi</h5>
+            <p class="card-text">Afet zamanlarında konum takibi, yardım organizasyonu ve iletişim için geliştirilen dijital yönetim sistemidir.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Proje 4 -->
+      <div class="col-md-6">
+        <div class="card project-card h-100">
+          <img src="img/mobilsakarya.jpg" class="card-img-top" alt="Mobil Sakarya">
+          <div class="card-body">
+            <h5 class="card-title">Mobil Sakarya Uygulaması</h5>
+            <p class="card-text">Vatandaşların belediye hizmetlerine mobil cihazlardan erişmesini sağlayan kapsamlı uygulamadır.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
