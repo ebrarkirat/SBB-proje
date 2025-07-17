@@ -1,53 +1,42 @@
-
-body {
+ /* Genel Stil */
+ body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
   background-color: #f8f9fa;
+}
+
+.logo {
+  height: 60px;
 }
 
 h1, h2 {
   color: #007bff;
 }
 
-.object-fit-cover {
-  object-fit: cover;
-  height: 100%;
-}
-.bilgiislem-logo {
+ .bilgiislem-logo {
   max-width: 100%;
   width: 300px;
   height: auto;
   display: block;
   margin: 20px auto;
 }
-/* Sidebar */
-body {
-  font-family: 'Segoe UI', Tahoma, sans-serif;
-  background-color: #f8f9fa;
-}
 
 .object-fit-cover {
   object-fit: cover;
   height: 100%;
 }
 
-.bilgiislem-logo {
-  max-width: 100%;
-  width: 300px;
-  height: auto;
-  display: block;
-}
-
-/* SAĞ SABİT MENÜ */
+/* SAĞ MENÜ */
 .sidebar-right {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
-  width: 190px;
+  width: 200px;
   background-color: #fff;
-  padding-top: 120px;
-  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
+  border-left: 1px solid #ccc;
+  padding-top: 100px;
   z-index: 999;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.05);
 }
 
 .sidebar-right ul {
@@ -72,7 +61,6 @@ body {
   border-radius: 4px;
 }
 
-/* Farklı hover renkleri */
 .sidebar-right ul li:nth-child(1) a:hover { background-color: #90e0a6; color: white; }
 .sidebar-right ul li:nth-child(2) a:hover { background-color: #b8e994; color: white; }
 .sidebar-right ul li:nth-child(3) a:hover { background-color: #a29bfe; color: white; }
@@ -81,6 +69,116 @@ body {
 .sidebar-right ul li:nth-child(6) a:hover { background-color: #ffeaa7; color: black; }
 .sidebar-right ul li:nth-child(7) a:hover { background-color: #fd79a8; color: white; }
 
-.sidebar-right ul li a i {
+.sidebar-right ul li i {
   font-size: 18px;
+  margin-right: 5px;
 }
+
+/* Müdürlük Kartları */
+.mudurluk-kart {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.mudurluk-kart:hover {
+  transform: scale(1.02);
+}
+
+/* Müdür Kutusu */
+.mudur-kutu {
+  background-color: white;
+  border: 2px solid #0d6efd;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.mudur-kutu img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #0d6efd;
+  object-fit: cover;
+}
+
+ /* İçeriği sağ menüye çarpmadan sola kaydır */
+    .content-wrapper {
+      margin-right: 220px; /* Menünün genişliğinden biraz fazla */
+
+
+}
+/* PROJELER SAYFASI İÇİN İÇERİK MENÜYE ÇARPMASIN */
+.main-content-wrapper {
+  margin-right: 220px; /* Sağ menü 200px + boşluk için 20px */
+}
+
+/* Projeler Sayfası - Özel CSS */
+
+/* Sayfa arka plan rengi */
+body {
+  background-color: #f8f9fa;
+}
+
+/* Proje kartlarındaki görseller */
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Üst başlık yapısı */
+.header-container {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #e5e5e5;
+}
+
+.header-logo {
+  height: 60px;
+  margin-right: 15px;
+}
+
+.header-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.header-subtitle {
+  font-size: 1rem;
+  color: #555;
+}
+  /* galeri Sayfası - Özel CSS */
+body { background-color: #f8f9fa; }
+    .header-container {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border-bottom: 2px solid #e5e5e5;
+    }
+    .header-logo {
+      height: 60px;
+      margin-right: 15px;
+    }
+    .header-title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #007bff;
+    }
+    .header-subtitle {
+      font-size: 1rem;
+      color: #555;
+    }
+    .carousel-img {
+      cursor: pointer;
+      height: 600px;
+      object-fit: cover;
+    }
+    .modal-img {
+      width: 100%;
+      border-radius: 8px;
+      max-height: 80vh; 
+      object-fit: contain;
+    }
